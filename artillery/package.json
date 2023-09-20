@@ -1,0 +1,18 @@
+{
+  "name": "artillery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "benchmark.python": "npx artillery run src/python-benchmark.yaml --output python-result.json",
+    "benchmark.node": "npx artillery run src/node-benchmark.yaml --output node-result.json",
+    "report.python": "npx artillery report --output python-result.html python-result.json",
+    "report.node": "npx artillery report --output node-result.html node-result.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "artillery": "2.0.0-37"
+  }
+}
