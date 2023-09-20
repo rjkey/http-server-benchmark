@@ -42,7 +42,6 @@ async def benchmark():
 
     return inserted_data
 
-    # return json.dumps([dict(ix) for ix in inserted_data])  # CREATE JSON
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
