@@ -1,0 +1,14 @@
+   version: '3'
+   services:
+     node-benchmark-server:
+       build:
+         context: node
+         dockerfile: Dockerfile
+       ports:
+         - 5000:8000
+     python-benchmark-server:
+       build:
+         context: python
+         dockerfile: Dockerfile
+       ports:
+         - 6000:8000

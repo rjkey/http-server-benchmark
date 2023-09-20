@@ -8,9 +8,7 @@ COPY ./src/ /app
 COPY requirements.txt /app
 
 # Install dependencies
-RUN apk update
-RUN apk add python3
-RUN apk add py3-pip
+RUN apk update && apk add python3 py3-pip
 
 RUN pip install -r requirements.txt
 
